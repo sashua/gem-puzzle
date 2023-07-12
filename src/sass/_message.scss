@@ -1,0 +1,14 @@
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 0.5em;
+
+  font-size: 1.5rem;
+  text-align: center;
+  color: $messageColor;
+
+  background-color: $messageBgColor;
+  border: $messageBorder;
+  border-radius: $messageBorderRadius;
+}

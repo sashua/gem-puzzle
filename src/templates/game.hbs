@@ -1,0 +1,59 @@
+<main class="game">
+  <div class="container">
+    <h1 class="game__title">Gem Puzzle</h1>
+    <div class="game__buttons js-buttons">
+      <button class="button" data-action="newGame">New</button>
+      <button class="button" data-action="saveGame">Save</button>
+      <button class="button" data-action="loadGame">Load</button>
+      <button class="button" data-action="showResults">Results</button>
+    </div>
+    <div class="game__state">
+      <p class="game__info">
+        <svg width="32" height="32">
+          <use href="{{icons}}#icon-dice"></use>
+        </svg>
+        <span class="js-moves">0</span>
+      </p>
+      <p class="game__info">
+        <svg width="32" height="32">
+          <use href="{{icons}}#icon-time"></use>
+        </svg>
+        <span class="js-time">00:00</span>
+      </p>
+      <label class="check">
+        <input
+          class="check__input js-mute"
+          type="checkbox"
+          name="mute"
+          value="mute"
+        />
+        <svg class="check__icon check__icon--on">
+          <use href="{{icons}}#icon-mute"></use>
+        </svg>
+        <svg class="check__icon check__icon--off">
+          <use href="{{icons}}#icon-volume"></use>
+        </svg>
+      </label>
+    </div>
+  </div>
+  <div class="game__wrap">
+    <div class="game__frame js-frame"></div>
+    <div class="game__modal is-hidden js-modal"></div>
+  </div>
+
+  <div class="container">
+    <div class="game__sizes js-sizes">
+      {{#each sizes}}
+        <label class="check">
+          <input
+            class="check__input"
+            type="radio"
+            name="size"
+            value="{{this}}"
+          />
+          <span class="check__label">{{this}}x{{this}}</span>
+        </label>
+      {{/each}}
+    </div>
+  </div>
+</main>

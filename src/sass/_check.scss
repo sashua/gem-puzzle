@@ -1,0 +1,53 @@
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25em;
+
+  line-height: 1;
+  color: $primaryColor;
+  cursor: pointer;
+}
+
+.check__input {
+  @extend .visually-hidden;
+}
+
+.check__icon {
+  &--on {
+    display: none;
+  }
+  &--off {
+    display: block;
+  }
+  .check__input:checked ~ &--on {
+    display: block;
+  }
+  .check__input:checked ~ &--off {
+    display: none;
+  }
+}
+
+.check__label {
+  position: relative;
+  top: 0;
+  padding: 0.5em 0.5em;
+
+  line-height: 1;
+
+  color: $checkColor;
+  background-color: $checkBgColor;
+  border-radius: $checkBorderRadius;
+  box-shadow: $checkShadow;
+
+  transition: color $transitionParams, background-color $transitionParams,
+    box-shadow $transitionParams, top $transitionParams;
+
+  .check__input:checked ~ & {
+    color: $checkActiveColor;
+    background-color: $checkActiveBgColor;
+
+    top: 1px;
+    box-shadow: $checkActiveShadow;
+  }
+}

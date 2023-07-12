@@ -1,0 +1,19 @@
+<table class="results">
+  <caption class="results__caption">Top
+    {{size}}x{{size}}
+    results<br />(by time per move)</caption>
+  <tr class="results__row">
+    <th class="results__head">#</th>
+    <th class="results__head">Date</th>
+    <th class="results__head">Moves</th>
+    <th class="results__head">Time</th>
+  </tr>
+  {{#each results}}
+    <tr class="results__row">
+      <td class="results__cell">{{place}}</td>
+      <td class="results__cell">{{date}}</td>
+      <td class="results__cell">{{moves}}</td>
+      <td class="results__cell">{{time}}</td>
+    </tr>
+  {{/each}}
+</table>

@@ -1,0 +1,42 @@
+{
+  "name": "gem-puzzle",
+  "version": "1.0.0",
+  "description": "RSS Gem Puzzle Task",
+  "private": true,
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "dev": "webpack --mode development",
+    "prod": "webpack --mode production",
+    "watch": "webpack --mode production --watch",
+    "stats": "webpack --profile --json > stats.json && webpack-bundle-analyzer stats.json"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/preset-env": "^7.18.10",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.5",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.25.0",
+    "eslint-webpack-plugin": "^3.2.0",
+    "handlebars-loader": "^1.7.2",
+    "html-loader": "^4.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "postcss": "^8.4.16",
+    "postcss-loader": "^7.0.1",
+    "posthtml-include": "^1.7.4",
+    "posthtml-loader": "^2.0.1",
+    "sass": "^1.54.5",
+    "sass-loader": "^13.0.2",
+    "webpack": "^5.74.0",
+    "webpack-bundle-analyzer": "^4.6.1",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.0"
+  },
+  "dependencies": {
+    "lodash.shuffle": "^4.2.0",
+    "modern-normalize": "^1.1.0"
+  }
+}

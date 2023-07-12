@@ -1,0 +1,23 @@
+.button {
+  padding: 0.5em 1em;
+
+  line-height: 1;
+
+  color: $buttonColor;
+  background-color: $buttonBgColor;
+  border-radius: $buttonBorderRadius;
+  box-shadow: $buttonShadow;
+
+  transition: color $transitionParams, background-color $transitionParams,
+    box-shadow $transitionParams, transform $transitionParams;
+
+  &:hover {
+    color: $buttonActiveColor;
+    background-color: $buttonActiveBgColor;
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: $buttonActiveShadow;
+  }
+}

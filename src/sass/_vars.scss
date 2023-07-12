@@ -1,0 +1,52 @@
+$primaryFont: "Roboto", sans-serif;
+$monoFont: "Roboto Mono", monospace;
+
+$whiteColor: #fff;
+$blackColor: #000;
+$primaryColor: #293241;
+$secondaryColor: #3d5a80;
+$accentColor: #ee6c4d;
+$primaryBgColor: #98c1d9;
+$secondaryBgColor: #e0fbfc;
+
+$radiiS: 4px;
+$radiiM: 8px;
+$radiiL: 16px;
+
+$transitionParams: 0.3s;
+
+$sidePadding: 1em;
+$gameColor: $primaryColor;
+$gameBgColor: $primaryBgColor;
+$gameBorder: 2px solid $secondaryColor;
+$gameBorderRadius: $radiiL;
+
+$frameBgColor: $secondaryBgColor;
+$frameBorder: none;
+$frameBorderRadius: 0;
+
+$modalBgColor: rgba(255, 255, 255, 0.25);
+$messageColor: $secondaryColor;
+$messageBgColor: $whiteColor;
+$messageBorder: 2px solid $secondaryColor;
+$messageBorderRadius: $radiiM;
+
+$buttonColor: $whiteColor;
+$buttonBgColor: $secondaryColor;
+$buttonActiveColor: $whiteColor;
+$buttonActiveBgColor: $accentColor;
+$buttonBorderRadius: $radiiS;
+$buttonShadow: 1px 1px 2px $primaryColor;
+$buttonActiveShadow: 0 0 2px $primaryColor;
+
+$checkColor: $whiteColor;
+$checkBgColor: $secondaryColor;
+$checkActiveColor: $whiteColor;
+$checkActiveBgColor: $accentColor;
+$checkBorderRadius: $radiiS;
+$checkShadow: 1px 1px 2px $primaryColor;
+$checkActiveShadow: 0 0 2px $primaryColor;
+
+$minFrameSize: 320px;
+$maxFrameSize: 640px;
+$mobileBreakpoint: 640px;
